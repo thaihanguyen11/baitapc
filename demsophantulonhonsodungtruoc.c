@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <math.h>
+
+int main (){
+    int t;
+    scanf("%d", &t);
+    while (t--){
+        int n;
+        int tong = 0;
+        scanf("%d", &n);
+        int max = 0;
+        int a[n];
+            for ( int i = 0 ; i < n ; i++) {
+                scanf("%d", &a[i]);
+            }
+            for ( int i = 0 ; i < n ; i++ ){
+                if (a[i] >= max){
+                    max = a[i];
+                    tong++;
+                }
+            
+            }
+             printf("%d\n", tong);
+    }
+return 0;
+}
